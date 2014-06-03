@@ -1,25 +1,25 @@
 //
-//  FISFiboFinderSpec.m
+//  FISFiboFinderAdvancedSpecSpec.m
 //  FiboFinder
 //
-//  Created by Chris Gonzales on 6/2/14.
+//  Created by Chris Gonzales on 6/3/14.
 //  Copyright 2014 FIS. All rights reserved.
 //
 
-#ifndef ADVANCED
+#ifdef ADVANCED
 #import "Specta.h"
-#import "FISFiboFinder.h"
+#import "FISFiboFinderAdvanced.h"
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import "KIF.h"
 #import "Swizzlean.h"
 
-SpecBegin(FISFiboFinder)
+SpecBegin(FISFiboFinderAdvanced)
 
-describe(@"FISFiboFinder", ^{
-    __block FISFiboFinder *fiboOjb;
+describe(@"FISFiboFinderAdvanced", ^{
+    __block FISFiboFinderAdvanced *fiboOjb;
     beforeAll(^{
-        fiboOjb = [[FISFiboFinder alloc] init];
+        fiboOjb = [[FISFiboFinderAdvanced alloc] init];
     });
     
     describe(@"findFibo", ^{
