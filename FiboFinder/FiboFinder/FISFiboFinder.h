@@ -10,6 +10,6 @@
 
 @interface FISFiboFinder : NSObject
 
-//declare methods here
+-(NSInteger)findFiboNumber:(NSInteger)number;
 
 @end
