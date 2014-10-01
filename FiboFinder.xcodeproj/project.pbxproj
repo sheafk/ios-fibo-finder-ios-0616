@@ -23,7 +23,6 @@
 		726CD3F6193D6905003902C0 /* FISFiboFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F5193D6905003902C0 /* FISFiboFinder.m */; };
 		726CD3F8193D695C003902C0 /* FISFiboFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */; };
 		728DAD5A193E0B60008BBD6D /* FISFiboFinderAdvancedSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 728DAD59193E0B60008BBD6D /* FISFiboFinderAdvancedSpec.m */; };
-		72AE7E62193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		726CD3F5193D6905003902C0 /* FISFiboFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinder.m; sourceTree = "<group>"; };
 		726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderSpec.m; sourceTree = "<group>"; };
 		728DAD59193E0B60008BBD6D /* FISFiboFinderAdvancedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderAdvancedSpec.m; sourceTree = "<group>"; };
-		72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderAdvancedSpec.m; sourceTree = "<group>"; };
 		E887FA2CFADA3A20EF31AD90 /* Pods-FiboFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiboFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiboFinderTests/Pods-FiboFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				728DAD59193E0B60008BBD6D /* FISFiboFinderAdvancedSpec.m */,
-				72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */,
 				726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */,
 				726CD3E5193D1EA3003902C0 /* Supporting Files */,
 			);
@@ -320,7 +317,6 @@
 			files = (
 				728DAD5A193E0B60008BBD6D /* FISFiboFinderAdvancedSpec.m in Sources */,
 				726CD3F8193D695C003902C0 /* FISFiboFinderSpec.m in Sources */,
-				72AE7E62193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

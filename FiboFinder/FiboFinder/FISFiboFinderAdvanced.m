@@ -27,7 +27,7 @@
 {
     if (currentSequence.count <= targetNumber) {
         NSInteger lastItem = [[currentSequence lastObject] integerValue];
-        int secondToLastIndex = currentSequence.count - 2;
+        int secondToLastIndex = (int)currentSequence.count - 2;
         NSInteger secondToLastItem = [currentSequence[secondToLastIndex] integerValue];
         [currentSequence addObject: [NSNumber numberWithInteger:(lastItem + secondToLastItem)]];
         [self fiboSequence:currentSequence withFiboNumber:targetNumber];

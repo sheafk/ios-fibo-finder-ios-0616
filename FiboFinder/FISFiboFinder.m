@@ -20,7 +20,7 @@
     } else {
         for (NSInteger count = 0; count < number-1; count++) {
             NSInteger lastItem = [[sequence lastObject] integerValue];
-            int secondToLastIndex = sequence.count - 2;
+            int secondToLastIndex = (int)sequence.count - 2;
             NSInteger secondToLastItem = [sequence[secondToLastIndex] integerValue];
             [sequence addObject: [NSNumber numberWithInteger:(lastItem + secondToLastItem)]];
         }
