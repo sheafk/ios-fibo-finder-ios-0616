@@ -19,9 +19,7 @@
 		726CD3E0193D1EA3003902C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726CD3C5193D1EA3003902C0 /* Foundation.framework */; };
 		726CD3E1193D1EA3003902C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726CD3C9193D1EA3003902C0 /* UIKit.framework */; };
 		726CD3E9193D1EA3003902C0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 726CD3E7193D1EA3003902C0 /* InfoPlist.strings */; };
-		726CD3F6193D6905003902C0 /* FISFiboFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F5193D6905003902C0 /* FISFiboFinder.m */; };
-		726CD3F8193D695C003902C0 /* FISFiboFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */; };
-		72AE7E62193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */; };
+		726CD3F8193D695C003902C0 /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F7193D695C003902C0 /* FISAppDelegateSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +50,7 @@
 		726CD3DE193D1EA3003902C0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		726CD3E6193D1EA3003902C0 /* FiboFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FiboFinderTests-Info.plist"; sourceTree = "<group>"; };
 		726CD3E8193D1EA3003902C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		726CD3F4193D6905003902C0 /* FISFiboFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISFiboFinder.h; sourceTree = "<group>"; };
-		726CD3F5193D6905003902C0 /* FISFiboFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinder.m; sourceTree = "<group>"; };
-		726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderSpec.m; sourceTree = "<group>"; };
-		72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderAdvancedSpec.m; sourceTree = "<group>"; };
+		726CD3F7193D695C003902C0 /* FISAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegateSpec.m; sourceTree = "<group>"; };
 		E887FA2CFADA3A20EF31AD90 /* Pods-FiboFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiboFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiboFinderTests/Pods-FiboFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,8 +114,6 @@
 		726CD3CB193D1EA3003902C0 /* FiboFinder */ = {
 			isa = PBXGroup;
 			children = (
-				726CD3F4193D6905003902C0 /* FISFiboFinder.h */,
-				726CD3F5193D6905003902C0 /* FISFiboFinder.m */,
 				726CD3D4193D1EA3003902C0 /* FISAppDelegate.h */,
 				726CD3D5193D1EA3003902C0 /* FISAppDelegate.m */,
 				726CD3D7193D1EA3003902C0 /* Images.xcassets */,
@@ -143,8 +136,7 @@
 		726CD3E4193D1EA3003902C0 /* FiboFinderTests */ = {
 			isa = PBXGroup;
 			children = (
-				72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */,
-				726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */,
+				726CD3F7193D695C003902C0 /* FISAppDelegateSpec.m */,
 				726CD3E5193D1EA3003902C0 /* Supporting Files */,
 			);
 			path = FiboFinderTests;
@@ -300,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				726CD3D2193D1EA3003902C0 /* main.m in Sources */,
-				726CD3F6193D6905003902C0 /* FISFiboFinder.m in Sources */,
 				726CD3D6193D1EA3003902C0 /* FISAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				726CD3F8193D695C003902C0 /* FISFiboFinderSpec.m in Sources */,
-				72AE7E62193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m in Sources */,
+				726CD3F8193D695C003902C0 /* FISAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -408,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -422,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FiboFinder/FiboFinder-Prefix.pch";
 				INFOPLIST_FILE = "FiboFinder/FiboFinder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -435,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FiboFinder/FiboFinder-Prefix.pch";
 				INFOPLIST_FILE = "FiboFinder/FiboFinder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

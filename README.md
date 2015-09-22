@@ -1,13 +1,12 @@
 # Fibonacci Finder
 
-## Goals
+## Objectives
 
-1. Create an algorithm using loops, conditionals, and arrays.
-2. (Advanced) Create the same algorithm using recursion.
+1. Practice storing and retrieving `NSNumber` values in a collection.
 
 ## Introduction 
 
-Programmers often utilize mathematical concepts, proofs, and algorithms to give themselves direction in writing an exercise. For this exercise, we're going to challenge ourselves to write a method that will calculate any number along the Fibonacci Sequence.
+Programmers often utilize mathematical concepts, proofs, and algorithms to give themselves direction in writing an exercise. For this exercise, we're going to challenge ourselves to write a method that will calculate the Fibonacci Sequence to a specified length.
 
 The Fibonacci Sequence is defined by the formula:
 
@@ -15,42 +14,47 @@ F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-2</sub>
 
 with the accepted seed values as either:
 
-F<sub>0</sub> = 0, F<sub>1</sub> = 1, or
+F<sub>0</sub> = 0,F<sub>1</sub> = 1, or
 
 F<sub>1</sub> = 1, F<sub>2</sub> = 1
 
 and begins:
 
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 ...
+| F<sub>0</sub> | F<sub>1</sub> | F<sub>2</sub> | F<sub>3</sub> | F<sub>4</sub> | F<sub>5</sub> | F<sub>6</sub> | F<sub>7</sub> | F<sub>8</sub> | F<sub>9</sub> | F<sub>10</sub> | F<sub>11</sub> |  F<sub>12</sub> |
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | 89 | 144 |
 
-What the above information means is that, following the two intial values (in our case, `0` and `1`), each number is the sum of the two numbers preceding it in the sequence. If `0` is the zeroeth number (**Hint:** remember that arrays start at index `0`), then the first number is `1`, the second number is `0 + 1 = 1`, the third `1 + 1 = 2`, the fourth `2 + 3 = 5`, the fifth `3 + 5 = 8`, and so on into infinity.
+What the above information means is that, following the two initial values (in our case, `0` and `1`), each number is the sum of the two numbers preceding it in the sequence. If `0` is the zeroeth number (**Hint:** remember that arrays start at index `0`), then the first number is `1`, the second number is `0 + 1 = 1`, the third `1 + 1 = 2`, the fourth `1 + 2 = 3`, the fifth `2 + 3 = 5`, and so on into infinity.
 
 Don't get intimidated by the math! Whether or not you recall learning about the Fibonacci Sequence in high school or college math class—if you've ever seen a snail shell or a pine cone you're already familiar with it. One of the amazing aspects of the Fibonacci Sequence (and of much of mathematics as a whole) is how prevalent it can be found in nature. Snail shells follow the Fibonacci Spiral (a geometric representation of the number sequence), while pine cones and sun flowers display the shape of Vogel's model (which relies on numbers in the Fibonacci Sequence).
 
-Take a moment now (or save it for a study break later) to read about the history of the Fibonacci Sequence (its oldest known anthropological roots are actually in Sanskrit prosidy in India dating as far back as 200 BC) and look at some nature photography detailing Fibonacci geometry. If you're interested in some numerology, Arthur Benjamin's TED Talk is a six-minute video detailing how the Fibonacci Spiral and the Golden Ratio (1.618033...) are derived from the sequence.
- 
-Overview & history on [Wikipedia] (http://en.wikipedia.org/wiki/Fibonacci_number)
-
-Photography: [InspirationGreen](http://www.inspirationgreen.com/fibonacci-sequence-in-nature.html)
-
-TED Talk (6 min 25 sec): [Arthur Benjamin](https://www.youtube.com/watch?v=SjSHVDfXHQ4)
-
+Take a moment now (or save it for a study break later) to read about the [history of the Fibonacci Sequence](http://en.wikipedia.org/wiki/Fibonacci_number) (its oldest known anthropological roots are actually in Sanskrit prosidy in India dating as far back as 200 BC) and look at some [nature photography detailing Fibonacci geometry](http://www.inspirationgreen.com/fibonacci-sequence-in-nature.html). If you're interested in some numerology, [Arthur Benjamin's TED Talk ](https://www.youtube.com/watch?v=SjSHVDfXHQ4)is a six-minute video detailing how the Fibonacci Spiral and the Golden Ratio (1.618033...) are derived from the sequence.
 
 ## Instructions
 
-  1. Open the `*.xcworkspace` file in the lab's folder. (This lab includes frameworks for the tests which aren't directly included in the `*.xcodeproj` file, so make sure to use the workspace! You should see two blue icons in the navigator window labled "FiboFinder" and "Pods". We'll teach you all about using Cocoa Pods later in the course, but for now just make sure that you see them).
-  2. Write an instance method in `FISFiboFinder` titled `fibonacciNumberAtIndex:` that takes in one `NSUInteger` as an argument and returns an `NSUInteger` result. (**HINT:** the argument integer is equivalent to the *n* in the Fibonacci formula, and the result integer is *n*'s value.)
-  3. Take a look at the unit tests. These are the files in the "FiboFinderTests" folder named `<#className#>Spec`. It's totally normal for these files to still look confusing, but try to get a sense of understanding the expected results for the input values.
-  4. Run the tests by pressing `⌘U`. If any of them fail, try rewriting your `fibonacciNumberAtIndex:` method so that they pass. Ask for help if you get stuck!
+Open the `ios-fibo-finder.xcworkspace` file.
+
+1. Navigate to the `FISAppDelegate.h` header file. Declare one method called `arrayWithFibonacciSequenceToIndex:` which takes one `NSUInteger` argument called `index` and returns an `NSArray`.
+
+2. Navigate to the `FISAppDelegate.m` implementation file. Use autocomplete to define the method implementation to return `nil` so that the build will succeed. Run the tests with `⌘` `U`to see that they fail.
+
+3. Modify the implementation of `arrayWithFibonacciSequenceToIndex:` to create a new `NSMutableArray` variable called `sequence` that also serves as the `return` object.
+
+4. To build the sequence in the array, we're going to need a loop. Between creating the `sequence` array and returning it, declare a `for` loop whose counter is limited by `index + 1` and increments by one.
+
+5. Since the sequence requires the two previous numbers to calculate the next one, we need to prime the sequence. To do this, we're going to need to manually pass in `@0` and `@1` on the first two iterations of the loop. We can detect the iteration number by checking `i` against `0` and `1` respectively.
+  * Create an `if` statement that checks when `i` is equal to `0`. If it is, call the `addObject:` method on the `sequence` array with `@0` submitted as the argument.
+  * Chain an `else if` statement that checks when `i` is equal to `1`. If it is, call the `addObject:` method on the `sequence` array with `@1` submitted as the argument.
+  * If you wish to inspect your sequence, insert an `NSLog()` right before the return statement that prints the `sequence` array to the console.
+  * Run the tests with `⌘` `U` to see that the first two tests pass.
+
+6. Now it's time to implement the algorithm. Chain an `else` statement to the `if` and `else if` statements to set a default behavior for every iteration of the loop after the first two. In order to calculate the next fibonacci number in the sequence, we're going to need to:
+  * pull the previous two numbers out of the `sequence` array,  
+  **Hint:** *You can subscript an array with an operation, such as* `i-2`.
+  * convert them from `NSNumber`s to integer primitives, 
+  * calculate the next fibonacci number in the sequence by the finding the sum of the two converted integers, and 
+  * add the new fibonacci number to the `sequence` array.  
+  
+  Use the tests and `NSLog()`ing to help you determine when your implementation is correct.
 
 
-## Advanced
-1. Create a new Cocoa Touch Class titled `FISFiboFinderAdvanced` which inherits from NSObject. Declare the instance method `fibonacciNumberAtIndex:` for this class. It should also take one `NSUInteger` as an argument and return an `NSUInteger`.
-
-2. To prepare for the next step, 
-	- go to your test target `FiboFinderTests` and find the Build Settings. 
-	- Type `preprocessor macros` into the search bar in the upper right corner. 
-	- Double-click on the line containing the `Preprocessor Macros` label.
-	- Press the `+` button in the lower left corner of this box and type in `ADVANCED`. (**NOTE:** The attached image incorrectly reads `PRIME2000` because it is from a later lab. Type in `ADVANCED` for this lab.)
-![preprocessor_skitch](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/preprocessor_macro_ss2.png)
-3. Write out the method body for `fibonacciNumberAtIndex:` which returns the Nth number of the fibonacci sequence using recursion instead of a loop.
