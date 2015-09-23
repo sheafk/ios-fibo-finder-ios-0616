@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D83B32D1BB34FA800A36DC8 /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D83B32C1BB34FA800A36DC8 /* FISAppDelegateSpec.m */; };
 		68A81F3362A1408B9C01E50D /* libPods-FiboFinderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BBD61CEA3D64324993915D4 /* libPods-FiboFinderTests.a */; };
 		726CD3C6193D1EA3003902C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726CD3C5193D1EA3003902C0 /* Foundation.framework */; };
 		726CD3C8193D1EA3003902C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726CD3C7193D1EA3003902C0 /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		2A5A7DF16FB5F0DF28020071 /* Pods-FiboFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiboFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiboFinderTests/Pods-FiboFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D83B32C1BB34FA800A36DC8 /* FISAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegateSpec.m; sourceTree = "<group>"; };
 		6BBD61CEA3D64324993915D4 /* libPods-FiboFinderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiboFinderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726CD3C2193D1EA3003902C0 /* FiboFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiboFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726CD3C5193D1EA3003902C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +136,7 @@
 		726CD3E4193D1EA3003902C0 /* FiboFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D83B32C1BB34FA800A36DC8 /* FISAppDelegateSpec.m */,
 				726CD3E5193D1EA3003902C0 /* Supporting Files */,
 			);
 			path = FiboFinderTests;
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D83B32D1BB34FA800A36DC8 /* FISAppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

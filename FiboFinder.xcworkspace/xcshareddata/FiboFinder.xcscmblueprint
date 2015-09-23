@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C73283CC8223E9FD5C3A29887AE785DDE1FA5A07",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D133897C4C6C682E2E006C5A5D210ED1308A3888" : 0,
+    "C73283CC8223E9FD5C3A29887AE785DDE1FA5A07" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BD59F617-FFB8-43F0-A27B-C081638D4904",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D133897C4C6C682E2E006C5A5D210ED1308A3888" : "..\/..\/02-BASIC-STRUCTURES\/13-OBJC-PALINDROME-INSPECTOR\/objc-palindrome-inspector",
+    "C73283CC8223E9FD5C3A29887AE785DDE1FA5A07" : "ios-fibo-finder\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FiboFinder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FiboFinder.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:learn-co-curriculum\/ios-fibo-finder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C73283CC8223E9FD5C3A29887AE785DDE1FA5A07"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:learn-co-curriculum\/objc-palindrome-inspector.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D133897C4C6C682E2E006C5A5D210ED1308A3888"
+    }
+  ]
+}
