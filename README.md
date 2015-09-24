@@ -38,7 +38,7 @@ Open the `ios-fibo-finder.xcworkspace` file.
 
 2. Navigate to the `FISAppDelegate.m` implementation file. Use autocomplete to define the method implementation to return `nil` so that the build will succeed. Run the tests with `⌘` `U`to see that they fail.
 
-3. Modify the implementation of `arrayWithFibonacciSequenceToIndex:` to create a new `NSMutableArray` variable called `sequence` that also serves as the `return` object.
+3. Modify the implementation of `arrayWithFibonacciSequenceToIndex:` to create a new `NSMutableArray` variable called `sequence` that also serves as the method's `return` at the end of the implementation.
 
 4. To build the sequence in the array, we're going to need a loop. Between creating the `sequence` array and returning it, declare a `for` loop whose counter is limited by `index + 1` and increments by one.
 
