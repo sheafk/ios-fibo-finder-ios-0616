@@ -3,6 +3,7 @@
 ## Objectives
 
 1. Practice storing and retrieving `NSNumber` values in a collection.
+2. Does it owkr?
 
 ## Introduction 
 
