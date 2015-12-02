@@ -58,3 +58,5 @@ Open the `ios-fibo-finder.xcworkspace` file.
   Use the tests and `NSLog()`ing to help you determine when your implementation is correct.
 
 
+
+<a href='https://learn.co/lessons/ios-fibo-finder' data-visibility='hidden'>View this lesson on Learn.co</a>
