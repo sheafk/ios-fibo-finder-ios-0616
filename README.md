@@ -59,4 +59,4 @@ Open the `ios-fibo-finder.xcworkspace` file.
 
 
 
-<a href='https://learn.co/lessons/ios-fibo-finder' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ios-fibo-finder' title='Fibonacci Finder'>Fibonacci Finder</a> on Learn.co and start learning to code for free.</p>
